@@ -1,5 +1,6 @@
 var character = document.getElementById("character");
 var block = document.getElementById("block");
+var lost = document.getElementById("lost");
 
 function jump() {
   if (character.classList != "animate") {
@@ -19,6 +20,6 @@ var checkDead = setInterval(function () {
   );
   if (blockLeft < 20 && blockLeft > 0 && characterTop >= 130) {
     block.style.animation = "none";
-    alert("You lost !");
+    lost.innerHTML = "You lost !";
   }
 }, 10);
