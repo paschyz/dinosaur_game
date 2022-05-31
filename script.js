@@ -19,6 +19,6 @@ var checkDead = setInterval(function () {
   );
   if (blockLeft < 20 && blockLeft > 0 && characterTop >= 130) {
     block.style.animation = "none";
-    alert("u lose.");
+    alert("You lost !");
   }
 }, 10);
